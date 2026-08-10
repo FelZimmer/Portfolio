@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felipe Zimmermann — Estudante de Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Felipe De Oliveira Zimmermann, estudante de Engenharia de Software (FIAP) focado em back-end com Python. Projetos, skills e trajetória." />
+
+  <!-- Fontes: JetBrains Mono (identidade "código") + Inter (leitura do corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Acessibilidade: link para pular direto ao conteúdo -->
+  <a class="skip-link" href="#inicio-conteudo">Pular para o conteúdo</a>
+
+  <!-- ===================== TOPBAR / "ABAS DO EDITOR" ===================== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#topo" class="topbar__logo" aria-label="Voltar ao topo">
+        <span class="topbar__logo-bracket">&lt;</span>FelipeZ<span class="topbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="tabs" aria-label="Navegação principal">
+        <ul class="tabs__list" id="tabsList">
+          <li class="tabs__item">
+            <a href="#sobre" class="tabs__link" data-nav="sobre">
+              <span class="tabs__dot" style="--dot-color: var(--accent-teal)"></span>sobre.js
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#projetos" class="tabs__link" data-nav="projetos">
+              <span class="tabs__dot" style="--dot-color: var(--accent-amber)"></span>projetos.jsx
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#skills" class="tabs__link" data-nav="skills">
+              <span class="tabs__dot" style="--dot-color: var(--accent-purple)"></span>skills.json
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#experiencia" class="tabs__link" data-nav="experiencia">
+              <span class="tabs__dot" style="--dot-color: var(--accent-rose)"></span>trajetoria.log
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#contato" class="tabs__link" data-nav="contato">
+              <span class="tabs__dot" style="--dot-color: var(--accent-teal)"></span>contato.sh
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="topbar__cta" href="#contato">Fale comigo</a>
+
+      <button class="topbar__toggle" id="navToggle" aria-expanded="false" aria-controls="tabsList" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio-conteudo">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="topo">
+      <div class="hero__inner">
+        <div class="hero__code">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span class="code-window__dot" style="--dot-color:#F589A3"></span>
+              <span class="code-window__dot" style="--dot-color:#F0B86E"></span>
+              <span class="code-window__dot" style="--dot-color:#5EEAD4"></span>
+              <span class="code-window__filename">apresentacao.js</span>
+            </div>
+            <pre class="code-window__body"><code id="typedCode" aria-live="polite"></code><span class="cursor" aria-hidden="true">&nbsp;</span></pre>
+          </div>
+        </div>
+
+        <div class="hero__text">
+          <p class="eyebrow">// olá, seja bem-vindo(a)</p>
+          <h1 class="hero__title">Felipe Zimmermann</h1>
+          <p class="hero__subtitle">Estudante de Engenharia de Software (FIAP), construindo projetos com foco em back-end e Python.</p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+            <a href="#contato" class="btn btn--ghost">Entrar em contato</a>
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#sobre" aria-label="Rolar para a seção Sobre">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="section__inner">
+        <p class="section__eyebrow">sobre.js</p>
+        <h2 class="section__title">Sobre mim</h2>
+
+        <div class="about reveal">
+          <div class="about__photo about__photo--filled">
+            <img src="assets/Retrato corporativo de jovem profissional.png" alt="Foto de Felipe De Oliveira Zimmermann" loading="lazy" />
+          </div>
+
+          <div class="about__bio">
+            <p class="about__comment">/**<br>&nbsp;* 18 anos, natural de São Paulo.<br>&nbsp;* Backend Software Engineer in training.<br>&nbsp;*/</p>
+            <p>
+              Sou estudante de <strong>Engenharia de Software</strong> na FIAP e concluí o Ensino Médio
+              Técnico em Informática pela FIAP School. Estou em constante evolução: aprofundo meus
+              conhecimentos através de cursos, bootcamps e projetos pessoais em
+              <strong> Python</strong>, <strong> API's REST </strong>, <strong>SQL</strong> e <strong>NoSQL</strong>  .
+            </p>
+            <p>
+              Meu objetivo é crescer na área de tecnologia, com foco em <strong>Engenharia de Software
+              Back-end</strong>, adquirindo experiência prática no mercado de trabalho e construindo uma
+              carreira sólida. Atualmente busco uma oportunidade de <strong>estágio ou jovem aprendiz</strong>.
+            </p>
+
+            <ul class="about__facts">
+              <li><span>📍</span> São Paulo, SP</li>
+              <li><span>🎓</span> Engenharia de Software — FIAP (cursando)</li>
+              <li><span>💼</span> Disponível para estágio / jovem aprendiz</li>
+            </ul>
+
+            <a class="btn btn--outline" href="assets/Curriculo_Felipe_Zimmermann.pdf" download>Baixar currículo (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section class="section section--alt" id="projetos">
+      <div class="section__inner">
+        <p class="section__eyebrow">projetos.jsx</p>
+        <h2 class="section__title">Projetos em destaque</h2>
+        <p class="section__lead">
+          Os cards abaixo são renderizados a partir de <code>js/projects-data.js</code> —
+          adicione um novo objeto nesse arquivo para o projeto aparecer aqui automaticamente.
+        </p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Cards de projeto injetados via JavaScript (ver js/script.js) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="section__inner">
+        <p class="section__eyebrow">skills.json</p>
+        <h2 class="section__title">Stack &amp; ferramentas</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <p class="skill-card__import">import &#123; ... &#125; from <span>'frontend'</span></p>
+            <ul class="skill-card__list">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <p class="skill-card__import">import &#123; ... &#125; from <span>'backend'</span></p>
+            <ul class="skill-card__list">
+              <li>Python</li><li>API's REST</li><li>MongoDB</li><li>PostgreeSQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <p class="skill-card__import">import &#123; ... &#125; from <span>'ferramentas'</span></p>
+            <ul class="skill-card__list">
+              <li>Git &amp; GitHub</li><li>UML</li><li>Metodologias Ágeis</li><li>Arduino</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIÊNCIA ===================== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="section__inner">
+        <p class="section__eyebrow">trajetoria.log</p>
+        <h2 class="section__title">Formação &amp; trajetória</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__hash"></span>
+            </div>
+            <div class="timeline__content">
+              <p class="timeline__date">2026 — em andamento</p>
+              <h3 class="timeline__role">Cursos &amp; certificações complementares</h3>
+              <p>Fundamentos de Engenharia de Dados e Machine Learning (TOTVS, mai/2026); DevOps e Formação Social e Sustentabilidade (FIAP, mar/2026); Carreira Desenvolvimento Back-End Python (Alura, em andamento).</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__hash"></span>
+            </div>
+            <div class="timeline__content">
+              <p class="timeline__date">1º semestre — conclusão prevista dez/2029</p>
+              <h3 class="timeline__role">Bacharelado em Engenharia de Software — FIAP</h3>
+              <p>Cursando, com foco em desenvolvimento de sistemas completo. </p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__hash"></span>
+            </div>
+            <div class="timeline__content">
+              <p class="timeline__date">Concluído em dez/2025</p>
+              <h3 class="timeline__role">Ensino Médio Técnico em Informática — FIAP School</h3>
+              <p>Base técnica que originou os primeiros projetos práticos, entre eles o TotSimple, TCC da 3ª série do Ensino Médio Técnico.</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__hash"></span>
+            </div>
+            <div class="timeline__content">
+              <p class="timeline__date">2024 — atual</p>
+              <h3 class="timeline__role">Projetos acadêmicos &amp; desenvolvimento pessoal</h3>
+              <p>Projetos com Python, API's REST, SQL AND NoSQL, JavaScript, Node.js, HTML e CSS  ; Participação em bootcamps de Engenharia de Dados e Machine Learning; Fazendo o plano de carreira da alura em Desenvolvimento Back-End Python; Versionamento com Git e GitHub.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section contact" id="contato">
+      <div class="section__inner">
+        <p class="section__eyebrow">contato.sh</p>
+        <h2 class="section__title">Vamos conversar?</h2>
+        <p class="section__lead">
+          Estou aberto(a) a novas oportunidades e projetos. O jeito mais rápido de falar comigo é por e-mail.
+        </p>
+
+        <div class="terminal">
+          <div class="code-window__bar">
+            <span class="code-window__dot" style="--dot-color:#F589A3"></span>
+            <span class="code-window__dot" style="--dot-color:#F0B86E"></span>
+            <span class="code-window__dot" style="--dot-color:#5EEAD4"></span>
+            <span class="code-window__filename">contato.sh</span>
+          </div>
+          <div class="terminal__body">
+            <p class="terminal__line"><span class="terminal__prompt">visitante@portfolio:~$</span> contato --email</p>
+            <p class="terminal__line terminal__output">
+              <a href="mailto:fozimmer@gmail.com" id="emailLink">fozimmer@gmail.com</a>
+              <button class="copy-btn" id="copyEmailBtn" type="button" aria-label="Copiar e-mail">copiar</button>
+            </p>
+            <p class="terminal__line"><span class="terminal__prompt">visitante@portfolio:~$</span> contato --redes</p>
+            <p class="terminal__line terminal__output">
+              <a href="https://github.com/FelZimmer" target="_blank" rel="noopener noreferrer">github.com/FelZimmer</a><br />
+              <a href="https://www.linkedin.com/in/felipe-oliveira-zimmermann/" target="_blank" rel="noopener noreferrer">linkedin.com/in/felipe-oliveira-zimmermann</a>
+            </p>
+            <p class="terminal__line"><span class="terminal__prompt">visitante@portfolio:~$</span> <span class="cursor" aria-hidden="true">&nbsp;</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="anoAtual"></span> Felipe Zimmermann. Construído com HTML, CSS e JavaScript puros.</p>
+  </footer>
+
+  <script src="js/projects-data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

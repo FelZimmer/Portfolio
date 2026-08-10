@@ -29,7 +29,7 @@
 const projectsData = [
   {
     id: "auron",
-    name: "auron",
+    name: "Auron",
     extension: "py",
     languageColor: "#f0b86e",
     description:
@@ -40,7 +40,19 @@ const projectsData = [
     featured: true,
   },
   {
-    id: "totsimple",
+    id: "stylesync",
+    name: "StyleSync",
+    extension: "py",
+    languageColor: "#f0b86e",
+    description:
+      "// Sistema de gerenciamento gerenciamento de produtos e vendas, de uma startup de  e-commerce fictícia. O objetivo é fornecer uma base sólida e escalável para gerenciar as principais entidades do negócio: produtos, usuários e vendas. ",
+    tags: ["Flask", "MongoDB", "PyMongo", "Pydantic", "PyJWT", "HTML5", "CSS"],
+    demoUrl: "#",
+    repoUrl: "https://github.com/FelZimmer/StyleSync",
+    featured: true,
+  },
+  {
+    id: "Totsimple",
     name: "totsimple",
     extension: "jsx",
     languageColor: "#5eead4",

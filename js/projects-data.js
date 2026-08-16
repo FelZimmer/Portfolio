@@ -40,15 +40,15 @@ const projectsData = [
     featured: true,
   },
   {
-    id: "stylesync",
-    name: "StyleSync",
+    id: "StockPilot",
+    name: "StockPilot",
     extension: "py",
     languageColor: "#f0b86e",
     description:
-      "// Sistema de gerenciamento gerenciamento de produtos e vendas, de uma startup de  e-commerce fictícia. O objetivo é fornecer uma base sólida e escalável para gerenciar as principais entidades do negócio: produtos, usuários e vendas. ",
+      "// Sistema de gerenciamento gerenciamento de produtos e vendas, de uma startup de  e-commerce fictícia. O objetivo é fornecer uma base sólida e escalável para gerenciar as principais entidades do negócio: produtos, categórias, usuários e vendas. ",
     tags: ["Flask", "MongoDB", "PyMongo", "Pydantic", "PyJWT", "HTML5", "CSS"],
-    demoUrl: "#",
-    repoUrl: "https://github.com/FelZimmer/StyleSync",
+    demoUrl: "https://stockpilot-e8rg.onrender.com",
+    repoUrl: "https://github.com/FelZimmer/StockPilot",
     featured: true,
   },
   {
